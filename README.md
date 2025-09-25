@@ -107,6 +107,8 @@ Post-Trauma Sepsis is defined based on preprocessed data following Sepsis-3 cons
 - **Suspected Infection**: Identified by blood culture records (specifically chart time) within a 5-day window of qualifying antibiotic initiation.
 - **Organ Dysfunction**: Identified by a **2-point increase** in the SOFA score within a 7-day window (-3 days, day of, +3 days) relative to the culture chart time.
 
+![Sepsis Defination Timeline](https://github.com/ML4Health-AnonResearch/PostTraumaticSepsis/blob/main/supplementary/sepsisdefination_timeline.png)
+
 ### Step 3: Post-Process Sepsis Candidates
 Finally, we assign sepsis labels and onset timestamps as follows:
 - **0 as Non-Sepsis**: If a patient (HADM_ID) has no qualified sepsis candidates, they are labeled as non-sepsis, with the onset time set to NaN.
